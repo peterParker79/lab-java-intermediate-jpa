@@ -12,6 +12,8 @@ public abstract class Task {
     @Column(name = "task_id")
     private int taskId;
 
+    private String title;
+
     @Column(name = "due_date")
     private String dueDate;
 

@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 // de la subclase, y además, apunta a la clave primaria de la superclase
 
 public class BillableTask extends Task{
-    @Column(name="")
+    @Column(name="hourly_rate")
     private int hourlyRate;
 
 
