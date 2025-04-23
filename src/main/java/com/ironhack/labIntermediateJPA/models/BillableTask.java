@@ -1,13 +1,11 @@
 package com.ironhack.labIntermediateJPA.models;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.PrimaryKeyJoinColumn;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name="Billable_task")
+@Inheritance(strategy = InheritanceType.JOINED)
 @PrimaryKeyJoinColumn(name="task_id" ) //Esta columna es la clave primaria
 // de la subclase, y además, apunta a la clave primaria de la superclase
 
