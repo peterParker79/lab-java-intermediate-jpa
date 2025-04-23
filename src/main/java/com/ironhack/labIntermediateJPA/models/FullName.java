@@ -1,5 +1,9 @@
 package com.ironhack.labIntermediateJPA.models;
 
+import jakarta.persistence.Embeddable;
+import jakarta.persistence.Entity;
+
+@Embeddable
 public class FullName {
     private String fistName;
     private String lastName;
