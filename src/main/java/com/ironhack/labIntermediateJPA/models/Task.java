@@ -21,8 +21,8 @@ public abstract class Task {
 
     public Task() {}// Imprescindible constructor vacio
 
-    public Task(int taskId, String dueDate, boolean status) {
-        this.taskId = taskId;
+    public Task(String title, String dueDate, boolean status) {
+        this.title = title;
         this.dueDate = dueDate;
         this.status = status;
     }
@@ -33,6 +33,14 @@ public abstract class Task {
 
     public void setTaskId(int taskId) {
         this.taskId = taskId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDueDate() {
@@ -55,6 +63,7 @@ public abstract class Task {
     public String toString() {
         return "Task{" +
                 "taskId=" + taskId +
+                ", title='" + title + '\'' +
                 ", dueDate='" + dueDate + '\'' +
                 ", status=" + status +
                 '}';
